@@ -3,12 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Learning SVG - Impress.js</title>
-	<script rel="lib/impress/impress.js"></script>
-	<script rel="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<div id="impress">
-		-
+		<div class="step slide" data-x="1000" data-y="1000">
+			<h1>Want to see something cool?</h1>
+		</div>
+		<div class="step slide" data-x="3000" data-y="1000">
+			<div class="glob"></div>
+		</div>
+		<div class="step slide" data-x="5000" data-y="1000">
+			<div class="glob">
+				<div class="eyes new">:)</div>
+			</div>
+		</div>
+		<div class="step slide" data-x="7000" data-y="1000">
+			<div class="glob turn new-turn">
+				<div class="eyes">:)</div>
+			</div>
+		</div>
+		<div class="step slide" data-x="9000" data-y="1000">
+			<div class="glob turn roundtop new-roundtop">
+				<div class="eyes">:)</div>
+			</div>
+		</div>
+		<div class="step slide" data-x="11000" data-y="1000">
+			<div class="glob turn roundtop ball">
+				<div class="eyes">:)</div>
+			</div>
+		</div>
+		<div class="step slide" data-x="13000" data-y="1000">
+			<div class="glob turn roundtop borderanimation">
+				<div class="eyes">:)</div>
+			</div>
+		</div>
 	</div>
+	<script rel="js/script.js"></script>
+	<script src="js/impress.js"></script>
+	<script>impress().init();</script>
 </body>
 </html>

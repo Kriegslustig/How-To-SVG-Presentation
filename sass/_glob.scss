@@ -1,0 +1,70 @@
+.glob {
+	margin-left: calc(50vw - 5.5rem);
+	margin-top: calc(50vh - 10rem);
+	width: 11rem;
+	height: 20rem;
+	border: 1rem solid white;
+}
+
+.eyes {
+	font-size: 10rem;
+	width: 11rem;
+	height: 20rem;
+	margin-top: 3rem;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	transition: all 1s 1s;
+	&.new {
+		color: tomato;
+	}
+}
+
+.active .eyes.new {
+	color: white;
+}
+
+.turn {
+	transition: transform 1s 1s;
+	transform: rotate(90deg);
+	&.new-turn {
+		transform: rotate(0);
+	}
+}
+
+.active .new-turn{
+	transform: rotate(90deg);
+}
+
+.roundtop {
+	border-top-left-radius: 20rem;
+	border-bottom-left-radius: 20rem;
+	&.new-roundtop {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		transition: all 1s 1s;
+	}
+}
+
+.active .roundtop.new-roundtop {
+	border-top-left-radius: 20rem;
+	border-bottom-left-radius: 20rem;
+}
+
+.ball {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	transition: all 1s 1s;
+}
+
+.active .ball {
+	border-top-right-radius: 20rem;
+	border-bottom-right-radius: 20rem;
+	margin-top: calc(50vh - 5.5rem);
+	height: 11rem;
+	.eyes {
+		height: 11rem;
+		margin-top: -1rem;
+	}
+}
